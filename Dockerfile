@@ -8,6 +8,7 @@ ADD install.sh install.sh
 RUN rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm && \
 	yum --nogpgcheck install nginx14 -y && \
 	yum install mysql mysql-server -y && \
+	yum install vim wget tar -y && \
 	yum install php55w php55w-common php55w-fpm php55w-gd php55w-imap php55w-ldap php55w-mbstring php55w-mcrypt php55w-mysql php55w-opcache php55w-xml -y
 
 RUN cp virtual.conf /etc/nginx/conf.d/virtual.conf && \

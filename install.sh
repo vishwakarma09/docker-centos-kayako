@@ -5,7 +5,7 @@ db_name="fusion"
 
 #enter admin CP details here
 company_name="test"
-product_url="http://dedicatednode.tk/"
+product_url="http://sandzvps.tk/"
 first_name="admin"
 last_name="admin"
 username="admin"
@@ -36,6 +36,9 @@ sed -i "s/'DB_NAME', 'swift'/'DB_NAME', '$db_name'/" /usr/share/nginx/html/__swi
 service mysqld start
 service nginx start
 service php-fpm start
+
+#assigning default password for mysql]
+mysqladmin -u $db_user password $db_pass
 
 #creating database
 mysql -u$db_user -p$db_pass -e "create database $db_name default character set utf8 collate utf8_unicode_ci"
