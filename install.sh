@@ -5,7 +5,7 @@ db_name="fusion"
 
 #enter admin CP details here
 company_name="test"
-product_url="http://sandzvps.tk/"
+product_url="http://dedicatednode.tk/"
 first_name="admin"
 last_name="admin"
 username="admin"
